@@ -1,0 +1,22 @@
+.user{
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom: 1px;
+    display: flex;
+}
+p{
+    font-size: 15px;
+}
+.name{
+    font-size: 18px;
+    color: gray;
+}
+.avatar{
+    width: auto;
+    height: 100%;
+    object-fit: scale-down;
+    margin-right: 15px;
+}
+.highlighted{
+    background-color: lightcyan;
+}

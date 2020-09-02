@@ -1,3 +1,4 @@
+// https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co
 let animal = {
     eats: true
   };

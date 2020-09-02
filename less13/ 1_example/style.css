@@ -1,0 +1,14 @@
+.column-name {
+  
+    min-width: 90px !important;
+}
+
+.cell {
+    display: inline-block;
+    border: 1px solid silver;
+    min-width: 80px;
+}
+
+.header-col {
+    font-weight: bold;
+}

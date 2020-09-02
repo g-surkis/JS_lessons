@@ -1,0 +1,1 @@
+const pullMaxKey = Math.max(...Array.from(connectionsObject[id].keys())) + 1;

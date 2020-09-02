@@ -7,3 +7,4 @@ const alligator = name => {
   }
   
   const jack =  alligator("jack");
+  console.log('jack: ', jack);
