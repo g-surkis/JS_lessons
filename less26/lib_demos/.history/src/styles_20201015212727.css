@@ -1,0 +1,13 @@
+
+
+.glide-img{
+  max-width: 450px;
+}
+
+.glide__slide{
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  /* background-color: aquamarine; */
+}
