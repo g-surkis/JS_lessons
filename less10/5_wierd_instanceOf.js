@@ -1,8 +1,8 @@
-function A() {}
-function B() {}
+function A() { }
+function B() { }
 
 A.prototype = B.prototype = {};
 
 let a = new A();
 
-console.log( a instanceof B ); // true
+console.log(a instanceof B); // true

@@ -1,6 +1,6 @@
 // use another function with destructuring
 
-const myLibrary = [ 
+const myLibrary = [
     {
         title: 'The Road Ahead',
         author: 'Bill Gates',
@@ -21,19 +21,19 @@ const myLibrary = [
         countPage: 45
     }];
 
-    const renderBook = ({title, author, readingStatus, readingDate, })=>{
+const renderBook = ({ title, author, readingStatus, readingDate, }) => {
 
-        const readingInfo = readingStatus ? `was read ${readingDate}` : 'still not read';
-            return `Book "${title}" of author ${author} ${readingInfo}`;
+    const readingInfo = readingStatus ? `was read ${readingDate}` : 'still not read';
+    return `Book "${title}" of author ${author} ${readingInfo}`;
+}
+
+
+const renderLibrary = (library) => {
+    for (const book of library) {
+        const renderedBook = renderBook(book);
+        console.log(renderBook(book));
     }
-
-
-    const renderLibrary = (library)=>{
-        for (const book of library) {
-            const renderedBook = renderBook(book);
-            console.log(renderBook(book));            
-        }
-    }
+}
 
 
 renderLibrary(myLibrary)

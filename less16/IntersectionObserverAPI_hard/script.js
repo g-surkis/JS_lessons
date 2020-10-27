@@ -1,5 +1,10 @@
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable no-console */
+/* eslint-disable func-names */
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-plusplus */
 /* eslint-disable no-undef */
-import res from '/mock.js';
+import res from './mock.js';
 
 //   entry.boundingClientRect
 //   entry.intersectionRatio
@@ -23,7 +28,7 @@ function buildThresholdList() {
   return thresholds;
 }
 
-const numSteps = 20.0;
+// const numSteps = 20.0;
 
 let prevRatio = 0.0;
 const increasingColor = 'rgba(40, 40, 190, ratio)';
@@ -35,14 +40,13 @@ const options = {
   threshold: buildThresholdList(),
 };
 
-const callback = (entries, observer) => {
+const callback = (entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > prevRatio) {
       entry.target.style.backgroundColor = increasingColor.replace('ratio', entry.intersectionRatio);
     } else {
       entry.target.style.backgroundColor = decreasingColor.replace('ratio', entry.intersectionRatio);
     }
-
     prevRatio = entry.intersectionRatio;
   });
 };
@@ -56,7 +60,9 @@ const pFactory = (text, styles = []) => {
   return p;
 };
 
-const renderList = (arr, list) => {
+const observer = new IntersectionObserver(callback, options);
+
+const renderList = (arr, obj) => {
   arr.map((item) => {
     const divUser = document.createElement('div');
     divUser.classList.add('user');
@@ -82,8 +88,7 @@ const renderList = (arr, list) => {
       window.scrollTo(0, this.offsetTop);
     });
 
-    list.append(divUser);
-    const observer = new IntersectionObserver(callback, options);
+    obj.append(divUser);
     const target = divUser;
     observer.observe(target);
 

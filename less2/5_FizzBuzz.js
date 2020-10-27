@@ -5,8 +5,6 @@
 // а для чисел які діляться без залишку на 5 (але не на 3) - "Buzz"
 // для чисел які одночасно діляться на 3 і на 5 - "FizzBuzz"
 
-
-
 console.time('2')
 for (let index = 0; index <= 100; index++) {
 
@@ -17,7 +15,8 @@ for (let index = 0; index <= 100; index++) {
     if (fizz) console.log('Fizz');
     if (buzz) console.log('Buzz');
     if (fizzBuzz) console.log('FizzBuzz');
-    if (!fizz && !buzz && !fizzBuzz) console.log(index);}
+    if (!fizz && !buzz && !fizzBuzz) console.log(index);
+}
 console.timeEnd('2')
 
 console.time('1')
@@ -35,8 +34,3 @@ for (let index = 0; index <= 100; index++) {
 }
 console.timeEnd('1')
 
-
-
-
-// const res1 = prompt('dfdjfgdf');
-// console.log('res: ', res1);

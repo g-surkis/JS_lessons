@@ -1,11 +1,11 @@
-// const regexp = new RegExp("template", "flag");
+const regexp = new RegExp("template", "flag");
 
 
-// const regexp = /template/; 
-// const regexp = /template/gmi;
+const regexp = /template/;
+const regexp = /template/gmi;
 
-// let tag = "h2";
-// let regexp = new RegExp(`<${tag}>`);
+let tag = "h2";
+let regexp = new RegExp(`<${tag}>`);
 
 // flags
 // i - case insensitive
@@ -92,4 +92,4 @@
 // console.log(validateEmail('ghgh@self.vomds'));
 // console.log(validateEmail('5114@self.vo'));
 // console.log(validateEmail('email@gmail.com'));
-  
+

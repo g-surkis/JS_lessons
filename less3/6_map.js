@@ -1,11 +1,5 @@
 // https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Map
 
-// const a = [1, 2, 3, 4, 5, 155]
-
-// delete a[2];
-
-
-// console.log('a: ', a, a.length);
 
 // new Map() //– создаёт коллекцию.
 // map.set(key, value) – записывает по ключу key значение value.
@@ -16,19 +10,19 @@
 // map.size – возвращает текущее количество элементов.
 
 
-// const users = new Map();
+const users = new Map();
 
-// users.set('user1', 'Robert')
-// users.set('user2', 'patrick')
-
-
-
-// console.log('users: ', users);
-
-// users.delete('user1')
+users.set('user1', 'Robert')
+users.set('user2', 'patrick')
 
 
-// console.log('users: ', users);
+
+console.log('users: ', users);
+
+users.delete('user1')
+
+
+console.log('users: ', users);
 
 
 
@@ -55,7 +49,7 @@
 
 // for (let amount of recipeMap.entries()) {
 //     console.log('amount: ', amount);
-    
+
 // }
 
 

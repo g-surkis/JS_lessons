@@ -29,7 +29,6 @@ function load_content(id) {
         const module = modulesLoader(MENU[id]).load()
         document.querySelector("#content").innerHTML = module;
     }, 400)
-
 }
 
 function push(event) {

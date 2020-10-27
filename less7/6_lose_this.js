@@ -3,21 +3,15 @@ let user = {
     sayHi() {
         console.log(`Hello, ${this.firstName}!`);
     }
-  };
-  
-  const demonstrate = (callback)=>{
-      callback();
-  }
+};
+
+const demonstrate = (callback) => {
+    callback();
+}
 
 
-//   demonstrate(user.sayHi)
+demonstrate(user.sayHi)
 
-
-
-
-
-
-  
 //   demonstrate(function() {
 //     user.sayHi(); 
 //   })

@@ -10,16 +10,16 @@ Hero.prototype.gainXp = function (amount) {
 };
 
 const mango = new Hero('Mango', 1000);
-console.log(mango); 
+console.log(mango);
 
-mango.gainXp(500); 
-console.log(mango); 
+mango.gainXp(500);
+console.log(mango);
 
 
 
 const Warrior = function (name, xp, weapon) {
- 
-  Hero.call(this, name, xp);  
+
+  Hero.call(this, name, xp);
   this.weapon = weapon;
   this.attack = function () {
     console.log(`${this.name} attacks with ${this.weapon}`);
@@ -43,9 +43,9 @@ const poly2 = new Warrior('Poly2', 200, 'sword');
 const poly3 = new Warrior('Poly3', 200, 'sword');
 
 // console.log(poly); 
-console.log(poly1); 
-console.log(poly2); 
-console.log(poly3); 
+console.log(poly1);
+console.log(poly2);
+console.log(poly3);
 // poly.attack(); // Poly attacks with sword
 
 

@@ -1,9 +1,9 @@
 // Partial application
 
-const multiply = (a, b, ) => a * b;
+const multiply = (a, b,) => a * b;
 
 function partial(fn, ...outer) {
-  return function(...inner)  {
+  return function (...inner) {
     const res = fn.apply(this, outer.concat(inner));
 
     return res;

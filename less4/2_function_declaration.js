@@ -1,4 +1,4 @@
-const add = function(a, b, c) {
+const add = function (a, b, c) {
   return a + b + c;
 };
 

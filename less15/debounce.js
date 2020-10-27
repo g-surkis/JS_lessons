@@ -13,11 +13,13 @@
 //   }
 // }
 
+
+
 function debounce(f, ms) {
-  
+
   let isCooldown = false;
 
-  return function() {
+  return function () {
     if (isCooldown) return;
     f.apply(this, arguments);
 
@@ -29,6 +31,7 @@ function debounce(f, ms) {
 }
 
 
-debounceBtn.addEventListener('click', debounce(function() {
-    console.info('Hey! It is', new Date().toUTCString());
-  }, 3000));
+debounceBtn.addEventListener('click', debounce(function () {
+  console.info('Hey! It is', new Date().toUTCString());
+}, 3000));
+

@@ -35,12 +35,12 @@ let html = '';
 
 for (const item of result) {
 
-     const element = `<div>
+    const element = `<div>
         <a href="${item.url}">${item.title}</a>
         <p></p>
      </div>`
 
-     html = html + element;    
+    html = html + element;
 }
 
 

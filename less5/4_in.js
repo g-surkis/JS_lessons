@@ -7,7 +7,7 @@ const person = {
         street: 'Shevchenko',
         number: 56
     },
-   getName(){
+    getName() {
         console.log(this.surname);
     }
 }

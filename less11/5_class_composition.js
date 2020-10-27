@@ -1,37 +1,37 @@
 const FoodMixin = superclass => class extends superclass {
-    eat(food) {
-      console.log(`Eating ${food}`);
-    }
-  
-    drink() {
-      console.log("Drinking 🍼");
-    }
-  };
+  eat(food) {
+    console.log(`Eating ${food}`);
+  }
+
+  drink() {
+    console.log("Drinking 🍼");
+  }
+};
 
 
-  class Animal {
-    constructor(name) {
-      this.name = name
-    }
+class Animal {
+  constructor(name) {
+    this.name = name
   }
-  
-  class Dog extends FoodMixin(Animal) {
-    constructor(...args) {
-      super(...args)
-    }
-  
-    bark() {
-      console.log("Woff woff!")
-    }
-  
-    haveLunch(food) {
-      this.eat(food);
-      this.drink();
-    }
+}
+
+class Dog extends FoodMixin(Animal) {
+  constructor(...args) {
+    super(...args)
   }
-  
-  const jack = new Dog("jack");
-  jack.haveLunch("little mouse");
+
+  bark() {
+    console.log("Woff woff!")
+  }
+
+  haveLunch(food) {
+    this.eat(food);
+    this.drink();
+  }
+}
+
+const jack = new Dog("jack");
+jack.haveLunch("little mouse");
 
 
 //   Since mixins are just factory functions, we can use several of them:

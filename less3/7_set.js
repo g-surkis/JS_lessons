@@ -13,18 +13,18 @@
 // set.size – возвращает количество элементов в множестве.
 
 
-// const set = new Set();
+const set = new Set();
 
-// set.add(5);
-// set.add(145);
-// set.add(45);
-// console.log('set: ', set);
-
-
-// set.add(5);
+set.add(5);
+set.add(145);
+set.add(45);
+console.log('set: ', set);
 
 
-// console.log('set: ', set);
+set.add(5);
+
+
+console.log('set: ', set);
 
 
 // const arr = [2,3,5,6,2,3];

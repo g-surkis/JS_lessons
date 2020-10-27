@@ -1,10 +1,11 @@
 // Веб - Воркер - це потоки, що належать браузеру, які можна використовувати для виконання JS - коду без блокування циклу подій.
-
+// start Live Server
 let worker;
 function testWorker() {
     if (typeof (Worker) !== "undefined") {
         if (typeof (worker) == "undefined") {
             worker = new Worker("worker.js");
+            console.log('worker: ', worker);
         }
         worker.onmessage = function (event) {
             document.getElementById("workerOutput").innerHTML = event.data;
@@ -13,6 +14,7 @@ function testWorker() {
         document.getElementById("workerOutput").innerHTML = "Web Workers are not supported in your browser";
     }
 }
+
 function terminateWorker() {
     worker.terminate();
     worker = undefined;

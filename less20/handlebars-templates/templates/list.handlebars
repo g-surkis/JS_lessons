@@ -1,5 +1,12 @@
-{{#each users}}
+{{#each elements}}
     <div class="user">
-      <img src="{{_links.avatar.href}}">
+      <img src="{{this._links.avatar.href}}">
+      <div>
+        <p class="name">{{this.first_name}}  {{this.last_name}}</p>
+        <p>{{this.gender}}</p>
+        <p>{{this.email}}</p>
+        <p>{{this.phone}}</p>
+        <p>{{this.address}}</p>
+      </div>
     </div>
 {{/each}}

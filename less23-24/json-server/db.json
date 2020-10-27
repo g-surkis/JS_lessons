@@ -1,0 +1,19 @@
+{
+  "posts": [],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "goods": [
+    {
+      "name": "Ola",
+      "id": 1
+    },
+    {
+      "name": "Olia",
+      "id": 2,
+      "age":28,
+      "address": "Lviv"
+    }
+  ]
+}

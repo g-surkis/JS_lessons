@@ -11,11 +11,11 @@ function myMap(array, callback) {
 }
 
 
-const multiply = function (el) { 
-    return el * 2 
+const multiply = function (el) {
+    return el * 2
 }
 
-const abstract = function (el) { 
+const abstract = function (el) {
     return el * el;
 }
 

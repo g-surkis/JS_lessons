@@ -1,8 +1,7 @@
 
-
-function myFunction (a, b){
+function myFunction(a, b) {
     const res = a + b;
-return
+    return
 }
 
 

@@ -6,13 +6,13 @@ const arr = res.result;
 console.log('arr: ', arr);
 
 
-const genders = arr.reduce((acc, user)=>{ 
-    if(acc.hasOwnProperty(user.status)){
-       acc[user.status] +=1
-       return acc;
-    }
-    acc[user.status] = 1
-    return acc;
+const genders = arr.reduce((acc, user) => {
+   if (acc.hasOwnProperty(user.status)) {
+      acc[user.status] += 1
+      return acc;
+   }
+   acc[user.status] = 1
+   return acc;
 }, {})
 
 // console.log('genders: ', genders);
@@ -28,11 +28,11 @@ const genders = arr.reduce((acc, user)=>{
 // const sorted = sorted.map((user)=>user.dob)
 // console.log('mapped: ', mapped);
 
-const mapped = arr.map((user)=>{
+const mapped = arr.map((user) => {
    const res = new URL(user.website).hostname;
-//    console.log('new URL(user.website): ', new URL(user.website));
+   //    console.log('new URL(user.website): ', new URL(user.website));
    console.log('res: ', res);
-  return  res
+   return res
 })
 // const sortedAlpha = mapped.sort((a, b)=>{ return a > b ? 1 : -1})
 // console.log('sortedAlpha: ', sortedAlpha);

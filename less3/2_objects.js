@@ -1,4 +1,9 @@
-const arr = [5,89,6,4,7, {}];
+const arr = [5, 89, 6, 4, 7, {}];
+const a = [1, 2, 3, 4, 5, 155]
+
+delete a[2];
+
+console.log('a: ', a, a.length);
 
 
 const obj = {
@@ -8,6 +13,6 @@ const obj = {
 }
 
 
-function myFunction(){
+function myFunction() {
     return 'this is function'
 }

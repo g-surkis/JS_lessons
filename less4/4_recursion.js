@@ -2,7 +2,7 @@
 
 
 function sumFromZeroToNumber(num) {
-    const res =  num ? num + sumFromZeroToNumber(num - 1) : num;
+    const res = num ? num + sumFromZeroToNumber(num - 1) : num;
     return res;
 }
 

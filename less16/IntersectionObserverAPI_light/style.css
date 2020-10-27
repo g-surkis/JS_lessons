@@ -1,25 +1,25 @@
-.user{
+.user {
     border: 1px solid gray;
     padding: 5px;
     margin-bottom: 45px;
     display: flex;
 }
-p{
+p {
     font-size: 15px;
 }
-.name{
+.name {
     font-size: 18px;
     color: gray;
 }
-.avatar{
+.avatar {
     width: auto;
     height: 100%;
     object-fit: scale-down;
     margin-right: 15px;
 }
-.highlighted{
+.highlighted {
     background-color: lightcyan;
 }
-.intersected{
+.intersected {
     background-color: hotpink;
 }

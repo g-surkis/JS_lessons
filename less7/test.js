@@ -15,7 +15,7 @@ const foods = [
 const getAllPropValues = function (arr, prop) {
   const a = []
   for (const iterator of arr) {
-   a.push(iterator[prop]) 
+    a.push(iterator[prop])
   }
 };
 

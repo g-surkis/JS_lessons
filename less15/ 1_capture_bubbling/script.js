@@ -1,38 +1,40 @@
 
 const students = [
-    {name: 'Ivan', homework: [{date: '14.08.2020', done: true}]},
-    {name: 'Maryan', homework: [{date: '14.08.2020', done: true}]},
-    {name: 'Mykhailo', homework: [{date: '14.08.2020', done: true}]},
-    {name: 'Yaroslav', homework: [{date: '14.08.2020', done: true}]},
-    {name: 'Liudmyla', homework: [{date: '14.08.2020', done: true}]},
-    {name: 'Taras', homework: [{date: '14.08.2020', done: true}]},
-    {name: 'Volodymyr', homework: [{date: '14.08.2020', done: true}]},
-    {name: 'Oleksii', homework: [{date: '14.08.2020', done: true}]},
+    { name: 'Ivan', homework: [{ date: '14.08.2020', done: true }] },
+    { name: 'Maryan', homework: [{ date: '14.08.2020', done: true }] },
+    { name: 'Mykhailo', homework: [{ date: '14.08.2020', done: true }] },
+    { name: 'Yaroslav', homework: [{ date: '14.08.2020', done: true }] },
+    { name: 'Liudmyla', homework: [{ date: '14.08.2020', done: true }] },
+    { name: 'Taras', homework: [{ date: '14.08.2020', done: true }] },
+    { name: 'Volodymyr', homework: [{ date: '14.08.2020', done: true }] },
+    { name: 'Oleksii', homework: [{ date: '14.08.2020', done: true }] },
 ]
 
 const list = document.querySelector('.students-list')
 
-list.addEventListener('click', function(event){
-    if(event.target.classList.contains('highlighted')){
-          return  event.target.classList.remove('highlighted'); 
+list.addEventListener('click', function (event) {
+    console.log('event.target: ', event.target);
+    if (event.target.classList.contains('highlighted')) {
+
+        return event.target.classList.remove('highlighted');
     }
     event.target.classList.add('highlighted');
 })
 
-const buildStudentsHomeworkTable = (arr, type, extraClass)=>{
-    return arr.map((item)=>{
+const buildStudentsHomeworkTable = (arr, type, extraClass) => {
+    return arr.map((item) => {
         return `<span class="lesson cell ${extraClass}">${item[type]}</span>`
     })
 }
 
-const renderTableHeader = (arr)=>{
-const homework = buildStudentsHomeworkTable(arr[0].homework, 'date', 'header-col')
-return `<li><span class="column-name cell">Name</span>${homework}</li>`
+const renderTableHeader = (arr) => {
+    const homework = buildStudentsHomeworkTable(arr[0].homework, 'date', 'header-col')
+    return `<li><span class="column-name cell">Name</span>${homework}</li>`
 }
 
 
-const renderList = (arr, list)=>{
-    arr.forEach((item)=>{
+const renderList = (arr, list) => {
+    arr.forEach((item) => {
         const homework = buildStudentsHomeworkTable(item.homework, 'done');
         const li = document.createElement('li');
         const nameCell = document.createElement('span');

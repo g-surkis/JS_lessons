@@ -7,10 +7,7 @@ console.log('b: ', b);
 
 
 const arr = ['Mango'];
-
 const newArr = arr;
 
 newArr.push('Lemon')
-
-
 console.log('arr: ', arr);

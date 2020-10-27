@@ -1,23 +1,23 @@
 import compose from "lodash/fp/compose"
 
 export const EatMixin = superclass => class extends superclass {
-    eat(food) {
-      console.log(`Eating ${food}`);
-    }
+  eat(food) {
+    console.log(`Eating ${food}`);
+  }
 };
-  
+
 export const PoopMixin = superclass => class extends superclass {
-    poop() {
-      console.log("Going to 💩");
-    }
+  poop() {
+    console.log("Going to 💩");
+  }
 };
-  
+
 export const FlyMixin = superclass => class extends superclass {
-    fly() {
-      console.log("Flying for real!");
-    }
+  fly() {
+    console.log("Flying for real!");
+  }
 };
-  
+
 
 class Animal {
   constructor(name) {

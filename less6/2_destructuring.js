@@ -1,15 +1,14 @@
 
-// const hotel = {
-//     name: 'Resort Hotel',
-//     stars: 5,
-//     capacity: 100,
-//   };
+const hotel = {
+  name: 'Resort Hotel',
+  stars: 5,
+  capacity: 100,
+};
 
-//   let { name, stars, status } = hotel;
+let { name, stars, status } = hotel;
 
 
-//   console.log('name, stars, status: ', name, stars, status);
-
+console.log('name, stars, status: ', name, stars, status);
 
 
 // const person = {
@@ -30,7 +29,7 @@
 //     stars: 5,
 //     capacity: 100,
 //   };
-  
+
 //   const { name, stars, ...obj } = hotel;
 //   console.log('obj: ', obj);
 

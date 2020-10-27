@@ -1,7 +1,7 @@
-.column-name {  
+.column-name {
     min-width: 90px !important;
 }
-li{
+li {
     list-style: none;
 }
 
@@ -14,6 +14,6 @@ li{
 .header-col {
     font-weight: bold;
 }
-.highlighted{
+.highlighted {
     background-color: skyblue;
 }

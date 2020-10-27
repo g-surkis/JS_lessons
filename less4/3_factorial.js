@@ -3,22 +3,22 @@
 
 
 function factorialize(num) {
-    if (num < 0) 
-          return -1;
-    else if (num == 0) 
-        return 1;
-    else {
-        return (num * factorialize(num - 1));
-    }
+  if (num < 0)
+    return -1;
+  else if (num == 0)
+    return 1;
+  else {
+    return (num * factorialize(num - 1));
   }
-  factorialize(5);
-  console.log('factorialize(5): ', factorialize(5));
+}
+factorialize(5);
+console.log('factorialize(5): ', factorialize(5));
 
 
 
 function factorial(n) {
-    return (n != 1) ? n * factorial(n - 1) : 1;
-  }
+  return (n != 1) ? n * factorial(n - 1) : 1;
+}
 
-  console.log('factorial(10)', factorial(10));
+console.log('factorial(10)', factorial(10));
 

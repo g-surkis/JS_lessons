@@ -19,7 +19,8 @@ const res = {
         edit: { href: 'https://gorest.co.in/public-api/users/13010' },
         avatar: { href: 'https://lorempixel.com/250/250/abstract/?97280' },
       },
-    }, {
+    }, 
+    {
       id: '13015', first_name: 'Misty', last_name: 'Berge', gender: 'female', dob: '1936-11-12', email: 'blick.alisa@example.net', phone: '756-837-9430 x9248', website: 'https://www.gerlach.com/suscipit-optio-nihil-quidem', address: '8575 Ebert Springs\nGleasonstad, CT 44690', status: 'active', _links: { self: { href: 'https://gorest.co.in/public-api/users/13015' }, edit: { href: 'https://gorest.co.in/public-api/users/13015' }, avatar: { href: 'https://lorempixel.com/250/250/people/?69931' } },
     }, {
       id: '13018', first_name: 'Dustin', last_name: 'Skiles', gender: 'male', dob: '1959-07-27', email: 'kherman@example.com', phone: '780-513-5781', website: 'http://www.cole.net/reiciendis-repellat-quam-ut-quia-distinctio-enim', address: '336 Oren Fork\nLake Aleen, MT 62477-3068', status: 'inactive', _links: { self: { href: 'https://gorest.co.in/public-api/users/13018' }, edit: { href: 'https://gorest.co.in/public-api/users/13018' }, avatar: { href: 'https://lorempixel.com/250/250/people/?41460' } },
