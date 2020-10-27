@@ -1,0 +1,93 @@
+@keyframes ellipsis {
+    to {
+        width: 20px;
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 20px;
+    }
+}
+
+* {
+    font-family: tahoma;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+p {
+    line-height: 18px;
+}
+div {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content {
+    padding: 5px;
+    background: rgb(250, 238, 238);
+    border-radius: 5px;
+    overflow-y: scroll;
+    border: 2px solid #7dc;
+    margin-top: 10px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-x: hidden;
+}
+#chat-input {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px;
+    width: 400px;
+}
+#status {
+    width: 150px;
+    display: block;
+    float: left;
+    margin-top: 15px;
+}
+
+.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+    animation: ellipsis steps(4, end) 900ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+.typing {
+    color: #ccc;
+}
+
+#user {
+    height: 26px;
+    width: 178px;
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 15px;
+    background-color: ivory;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top: 5px;
+    border: 1px solid #e7e7e7;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 0 0 #e7e7e7;
+    outline: none;
+}
+#counter {
+    width: 100%;
+    text-align: center;
+}
